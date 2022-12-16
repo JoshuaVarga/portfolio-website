@@ -1,0 +1,8 @@
+:root {
+  --color-dark: #aaaaaa;
+  --background-dark: #0f0f0f;
+}
+
+* {
+  margin: 0;
+}

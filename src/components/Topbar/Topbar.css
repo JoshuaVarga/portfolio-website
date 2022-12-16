@@ -1,0 +1,13 @@
+.topbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.topbar__link {
+    font-size: 32px;
+    padding-left: 8px;
+}
+
+.topbar__logo {
+    font-size: 32px;
+}
