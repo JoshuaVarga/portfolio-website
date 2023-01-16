@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { links, logo } from "../../data";
 
 import "./Topbar.css";
+import DarkMode from "../DarkMode";
 
 function Topbar(props) {
   const { handleLogoClick } = props;
@@ -29,7 +30,10 @@ function Topbar(props) {
       >
         <FontAwesomeIcon icon={logo.icon} alt={logo.alt} />
       </button>
-      <ul className="topbar__links">{topbarLinks}</ul>
+      <div>
+        <ul className="topbar__links">{topbarLinks}</ul>
+        <DarkMode />
+      </div>
     </div>
   );
 }
