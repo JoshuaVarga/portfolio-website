@@ -1,5 +1,7 @@
 .sidebar {
   text-align: right;
+  width: 400px;
+  height: 200px;
 }
 
 .sidebar__items {
@@ -8,31 +10,22 @@
   padding: 0;
 }
 
-.sidebar__item {
-  font-size: 32px;
-  transition: all 0.2s ease-in-out;
-}
-
-.sidebar__item:hover {
-  transform: scale(1.3);
-  color: white;
-}
-
-.sidebar__item-selected {
-  transform: scale(1.3);
-  color: white;
-}
-
-.sidebar__item-selected:hover {
-  color: var(--color-dark);
-}
-
-.sidebar__item-deselected {
-  color: var(--color-dark);
-}
-
 @media screen and (max-width: 600px) {
   .sidebar {
     text-align: center;
   }
+}
+
+.sidebar__item:hover {
+  font-weight: bold;
+}
+
+.sidebar__item-selected {
+  color: white;
+  font-weight: bold;
+}
+
+.sidebar__item-selected:hover {
+  color: var(--color-dark);
+  font-weight: normal;
 }

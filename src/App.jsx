@@ -24,6 +24,7 @@ function App() {
         <div className="sidebar__wrapper">
           <Sidebar
             projectHeaders={projectHeaders}
+            currentIndex={projectIndex}
             onClick={handleProjectIndex}
           />
         </div>

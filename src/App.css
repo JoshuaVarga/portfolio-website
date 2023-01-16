@@ -34,6 +34,12 @@ body {
   padding: 16px 16px 16px 16px;
 }
 
+h1 {
+  font-size: 32px;
+  color: white;
+  padding-bottom: 16px;
+}
+
 a,
 button {
   text-decoration: none;
@@ -45,6 +51,7 @@ button {
 a:hover,
 button:hover {
   cursor: pointer;
+  color: white;
 }
 
 ul {

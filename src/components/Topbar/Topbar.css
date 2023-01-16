@@ -1,13 +1,18 @@
 .topbar {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .topbar__link {
-    font-size: 32px;
-    padding-left: 8px;
+  font-size: 32px;
+  padding-left: 8px;
+}
+
+.topbar__link:hover,
+.topbar__logo:hover {
+  scale: 1.2;
 }
 
 .topbar__logo {
-    font-size: 32px;
+  font-size: 32px;
 }

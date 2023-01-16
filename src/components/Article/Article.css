@@ -5,7 +5,12 @@ ul {
 }
 
 p {
-  padding-bottom: 4px;
+  padding-top: 4px;
+}
+
+.link {
+  text-decoration: underline;
+  padding-right: 8px;
 }
 
 .header {
@@ -17,4 +22,15 @@ p {
   margin-right: 8px;
   border: 1px solid var(--color-dark);
   border-radius: 8px;
+}
+
+.article {
+  height: 200px;
+  width: 600px;
+  display: flex;
+}
+
+.image {
+  height: 200px;
+  padding-right: 16px;
 }
