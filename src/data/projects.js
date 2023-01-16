@@ -21,7 +21,7 @@ const projects = [
         url: "https://github.com/JoshuaVarga/Umbrellabot",
       },
     ],
-    image: "src/assets/umbrellabot.png",
+    image: "/umbrellabot.png",
   },
   {
     header: "Covid Visualizer",
@@ -33,7 +33,7 @@ const projects = [
         url: "https://github.com/JoshuaVarga/Covid-Visualizer",
       },
     ],
-    image: "src/assets/covid_visualizer.png",
+    image: "/covid_visualizer.png",
   },
   {
     header: "3D Showroom",
@@ -50,7 +50,7 @@ const projects = [
         url: "https://joshuavarga.github.io/3DShowroom/",
       },
     ],
-    image: "src/assets/3d_showroom.png",
+    image: "/3d_showroom.png",
   },
   {
     header: "Smart Rockets",
@@ -63,7 +63,7 @@ const projects = [
         url: "https://github.com/JoshuaVarga/Smart-Rockets",
       },
     ],
-    image: "src/assets/smart_rockets.png",
+    image: "/smart_rockets.png",
   },
   {
     header: "Cellular Automata",
@@ -75,7 +75,7 @@ const projects = [
         url: "https://github.com/JoshuaVarga/Cellular-Automata",
       },
     ],
-    image: "src/assets/cellular_automata.png",
+    image: "/cellular_automata.png",
   },
   {
     header: "Snake",
@@ -87,7 +87,7 @@ const projects = [
         url: "https://github.com/JoshuaVarga/Snake",
       },
     ],
-    image: "src/assets/snake.png",
+    image: "/snake.png",
   },
 ];
 
