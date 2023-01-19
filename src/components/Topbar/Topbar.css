@@ -16,3 +16,8 @@
 .topbar__logo {
   font-size: 32px;
 }
+
+.topbar__items {
+  display: flex;
+  align-items: center;
+}

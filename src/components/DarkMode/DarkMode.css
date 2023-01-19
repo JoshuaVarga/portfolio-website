@@ -1,0 +1,9 @@
+.toolbar__item {
+    width: 32px;
+    height: 32px;
+    padding-left: 8px;
+}
+
+.toolbar__item:hover {
+    scale: 1.2;
+}

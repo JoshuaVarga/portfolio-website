@@ -1,16 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
+import PropTypes from "prop-types";
 import "./DarkMode.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-function DarkMode() {
+function DarkMode(props) {
+  const { iconLight, iconDark, alt } = props;
+
+  const [theme, setTheme] = useState(localStorage.getItem("theme"));
+
   const clickedClass = "clicked";
   const { body } = document;
   const lightTheme = "light";
   const darkTheme = "dark";
-  let theme;
-
-  if (localStorage) {
-    theme = localStorage.getItem("theme");
-  }
 
   if (theme === lightTheme || theme === darkTheme) {
     body.classList.add(theme);
@@ -23,25 +24,30 @@ function DarkMode() {
       body.classList.replace(darkTheme, lightTheme);
       e.target.classList.remove(clickedClass);
       localStorage.setItem("theme", "light");
-      theme = lightTheme;
+      setTheme(lightTheme);
     } else {
       body.classList.replace(lightTheme, darkTheme);
       e.target.classList.remove(clickedClass);
       localStorage.setItem("theme", "dark");
-      theme = darkTheme;
+      setTheme(darkTheme);
     }
   };
 
   return (
-    <button
-      type="button"
-      className={theme === "dark" ? clickedClass : ""}
-      id="darkMode"
-      onClick={(e) => switchTheme(e)}
-    >
-      switch
+    <button type="button" id="darkMode" onClick={(e) => switchTheme(e)}>
+      {theme === "dark" ? (
+        <FontAwesomeIcon className="toolbar__item" icon={iconDark} alt={alt} />
+      ) : (
+        <FontAwesomeIcon className="toolbar__item" icon={iconLight} alt={alt} />
+      )}
     </button>
   );
 }
+
+DarkMode.propTypes = {
+  iconLight: PropTypes.string.isRequired,
+  iconDark: PropTypes.string.isRequired,
+  alt: PropTypes.string.isRequired,
+};
 
 export default DarkMode;
