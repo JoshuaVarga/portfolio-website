@@ -21,11 +21,11 @@
 }
 
 .sidebar__item-selected {
-  color: white;
+  color: var(--highlight-color);
   font-weight: bold;
 }
 
 .sidebar__item-selected:hover {
-  color: var(--color-dark);
+  color: var(--color);
   font-weight: normal;
 }

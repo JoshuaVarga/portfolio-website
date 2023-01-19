@@ -9,8 +9,8 @@ body {
   font-weight: 400;
 
   color-scheme: light dark;
-  color: var(--color-dark);
-  background-color: var(--background-dark);
+  color: var(--color);
+  background-color: var(--background-color);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -19,12 +19,24 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
+body.light {
+  --background-color: var(--color-dark);
+  --color: var(--background-dark);
+  --highlight-color: var(--highlight-light)
+}
+
+body.dark {
+  --background-color: var(--background-dark);
+  --color: var(--color-dark);
+  --highlight-color: var(--highlight-dark)
+}
+
 .app {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   position: absolute;
-  border: 1px solid var(--color-dark);
+  border: 1px solid var(--color);
   border-radius: 16px;
   box-sizing: border-box;
   top: 32px;
@@ -36,14 +48,14 @@ body {
 
 h1 {
   font-size: 32px;
-  color: white;
+  color: var(--highlight-color);
   padding-bottom: 16px;
 }
 
 a,
 button {
   text-decoration: none;
-  color: var(--color-dark);
+  color: var(--color);
   background: none;
   border: none;
 }
@@ -51,7 +63,7 @@ button {
 a:hover,
 button:hover {
   cursor: pointer;
-  color: white;
+  color: var(--highlight-color);
 }
 
 ul {

@@ -2,7 +2,9 @@ import React, { useMemo } from "react";
 import PropTypes from "prop-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import { links, logo } from "../../data";
+import DarkMode from "../DarkMode";
+
+import { links, logo, darkMode } from "../../data";
 
 import "./Topbar.css";
 
@@ -13,7 +15,11 @@ function Topbar(props) {
       links.map((link) => (
         <li className="topbar__link" key={link.alt}>
           <a href={link.url} target="_blank" rel="noreferrer">
-            <FontAwesomeIcon icon={link.icon} alt={link.alt} />
+            <FontAwesomeIcon
+              className="topbar__svg"
+              icon={link.icon}
+              alt={link.alt}
+            />
           </a>
         </li>
       )),
@@ -27,9 +33,20 @@ function Topbar(props) {
         type="button"
         onClick={() => handleLogoClick(-1)}
       >
-        <FontAwesomeIcon icon={logo.icon} alt={logo.alt} />
+        <FontAwesomeIcon
+          className="topbar__svg"
+          icon={logo.icon}
+          alt={logo.alt}
+        />
       </button>
-      <ul className="topbar__links">{topbarLinks}</ul>
+      <div className="topbar__items">
+        <ul className="topbar__links">{topbarLinks}</ul>
+        <DarkMode
+          iconDark={darkMode.iconDark}
+          iconLight={darkMode.iconLight}
+          alt={darkMode.alt}
+        />
+      </div>
     </div>
   );
 }
