@@ -52,8 +52,8 @@ function Article(props) {
         src={content.image}
         alt=""
       />
-      <motion.header variants={article}>
-        <motion.h1 variants={article} className="header">
+      <motion.header variants={article} className="header">
+        <motion.h1 variants={article} className="heading">
           {content.header}
         </motion.h1>
         <motion.ul variants={article}>{tags}</motion.ul>
