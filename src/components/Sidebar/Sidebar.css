@@ -1,7 +1,10 @@
 .sidebar {
+  height: 25vmin;
   text-align: right;
-  width: 400px;
-  height: 200px;
+}
+
+.sidebar__heading {
+  text-decoration: underline;
 }
 
 .sidebar__items {
@@ -10,22 +13,23 @@
   padding: 0;
 }
 
-@media screen and (max-width: 600px) {
-  .sidebar {
-    text-align: center;
-  }
+.sidebar__item,
+.sidebar__item:hover,
+.sidebar__item--selected,
+.sidebar__item--selected:hover {
+  font-size: 1.2em;
 }
 
 .sidebar__item:hover {
   font-weight: bold;
 }
 
-.sidebar__item-selected {
+.sidebar__item--selected {
   color: var(--highlight-color);
   font-weight: bold;
 }
 
-.sidebar__item-selected:hover {
-  color: var(--color);
+.sidebar__item--selected:hover {
+  color: var(--font-color);
   font-weight: normal;
 }
