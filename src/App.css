@@ -76,6 +76,7 @@ ul {
 main {
   flex: 1;
   display: flex;
+  padding: 8vmin;
 }
 
 footer {
@@ -83,14 +84,14 @@ footer {
   justify-content: right;
 }
 .article__wrapper {
-  flex: 2;
+  flex: 2 1;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .sidebar__wrapper {
-  flex: 1;
+  flex: 1 1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -100,5 +101,14 @@ footer {
 @media screen and (max-width: 600px) {
   main {
     flex-direction: column;
+  }
+
+  .article__wrapper {
+    align-items: flex-start;
+  }
+
+  .sidebar__wrapper {
+    align-items: flex-start;
+    justify-content: right;
   }
 }
