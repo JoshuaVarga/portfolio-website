@@ -1,7 +1,7 @@
 .toolbar__item {
     width: 32px;
     height: 32px;
-    padding-left: 8px;
+    padding-left: 4px;
 }
 
 .toolbar__item:hover {

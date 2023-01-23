@@ -21,7 +21,7 @@ function Sidebar(props) {
           <motion.button
             className={
               index === currentIndex
-                ? "sidebar__item-selected"
+                ? "sidebar__item--selected"
                 : "sidebar__item"
             }
             type="button"
@@ -36,7 +36,7 @@ function Sidebar(props) {
 
   return (
     <nav className="sidebar">
-      <h1>Projects</h1>
+      <h1 className="sidebar__heading">Projects</h1>
       <ul className="sidebar__items">{sidebarItems}</ul>
     </nav>
   );

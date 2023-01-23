@@ -1,5 +1,5 @@
 const about = {
-  header: "Hi! my name is Joshua Varga.",
+  header: "Hi! My name is Joshua Varga.",
   tags: [],
   paragraph:
     "I'm a recent graduate and aspiring developer from Ontario, Canada with a passion for creating and visualizing complex systems.",
