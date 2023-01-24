@@ -36,7 +36,7 @@
   }
 
   .image {
-    height: auto;
-    width: 50%
+    height: 25vw;
+    width: auto;
   }
 }

@@ -1,5 +1,4 @@
 .sidebar {
-  height: 25vmin;
   text-align: right;
 }
 
@@ -35,5 +34,9 @@
 }
 
 @media screen and (max-width: 600px) {
-  
+  .sidebar__items {
+    height: 4rem;
+    overflow: scroll;
+    background-image: var(--gradient);
+  }
 }
