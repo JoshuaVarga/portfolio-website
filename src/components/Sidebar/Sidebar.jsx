@@ -17,7 +17,11 @@ function Sidebar(props) {
   const sidebarItems = useMemo(
     () =>
       projectHeaders.map((projectHeader, index) => (
-        <li key={projectHeader}>
+        <motion.li
+          initial={{ opacity: 0, scale: 0 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          key={projectHeader}
+        >
           <motion.button
             className={
               index === currentIndex
@@ -29,7 +33,7 @@ function Sidebar(props) {
           >
             {projectHeader}
           </motion.button>
-        </li>
+        </motion.li>
       )),
     [projectHeaders, currentIndex, handleClick]
   );
