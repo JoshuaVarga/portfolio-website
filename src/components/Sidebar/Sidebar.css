@@ -37,6 +37,7 @@
   .sidebar__items {
     height: 4rem;
     overflow: scroll;
-    background-image: var(--gradient);
+    overflow-x: hidden;
+    scrollbar-width: none;
   }
 }
