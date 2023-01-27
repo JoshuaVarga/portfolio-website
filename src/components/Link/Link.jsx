@@ -6,7 +6,15 @@ function Link(props) {
   const { children, href, target, rel } = props;
 
   return (
-    <motion.a href={href} target={target} rel={rel} onTap={{ scale: 0.8 }}>
+    <motion.a
+      href={href}
+      target={target}
+      rel={rel}
+      whileTap={{ scale: 0.8 }}
+      whileHover={{
+        scale: 1.2,
+      }}
+    >
       {children}
     </motion.a>
   );

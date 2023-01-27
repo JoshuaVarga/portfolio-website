@@ -3,6 +3,8 @@ import PropTypes from "prop-types";
 import "./DarkMode.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+import Button from "../Button";
+
 function DarkMode(props) {
   const { iconLight, iconDark, alt } = props;
 
@@ -34,13 +36,13 @@ function DarkMode(props) {
   };
 
   return (
-    <button type="button" id="darkMode" onClick={(e) => switchTheme(e)}>
+    <Button className="darkMode" onClick={(e) => switchTheme(e)}>
       {theme === "dark" ? (
         <FontAwesomeIcon className="toolbar__item" icon={iconDark} alt={alt} />
       ) : (
         <FontAwesomeIcon className="toolbar__item" icon={iconLight} alt={alt} />
       )}
-    </button>
+    </Button>
   );
 }
 

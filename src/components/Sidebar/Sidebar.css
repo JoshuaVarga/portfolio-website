@@ -12,12 +12,13 @@
   padding: 0;
 }
 
-.sidebar__item,
-.sidebar__item--selected {
+.sidebar__item {
   font-size: 1.2em;
 }
 
 .sidebar__item--selected {
+  font-size: 1.2em;
+  font-weight: bold;
   color: var(--highlight-color);
 }
 
@@ -27,14 +28,5 @@
     overflow: scroll;
     overflow-x: hidden;
     scrollbar-width: thin;
-  }
-
-  .sidebar__item--selected:hover {
-    font-size: 1.2em;
-  }
-
-  .sidebar__item:hover,
-  .sidebar__item--selected:hover {
-    color: var(--highlight-color);
   }
 }
