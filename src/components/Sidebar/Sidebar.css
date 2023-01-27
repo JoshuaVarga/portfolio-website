@@ -12,14 +12,14 @@
   padding: 0;
 }
 
-.sidebar__item {
+.sidebar__item,
+.sidebar__item--selected {
   font-size: 1.2em;
 }
 
 .sidebar__item--selected {
-  font-size: 1.2em;
-  font-weight: bold;
   color: var(--highlight-color);
+  font-weight: bold;
 }
 
 @media screen and (max-width: 600px) {
