@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import DarkMode from "../DarkMode";
+import Link from "../Link";
 
 import { links, logo, darkMode } from "../../data";
 
@@ -14,13 +15,13 @@ function Topbar(props) {
     () =>
       links.map((link) => (
         <li className="topbar__link" key={link.alt}>
-          <a href={link.url} target="_blank" rel="noreferrer">
+          <Link href={link.url} target="_blank" rel="noreferrer">
             <FontAwesomeIcon
               className="topbar__svg"
               icon={link.icon}
               alt={link.alt}
             />
-          </a>
+          </Link>
         </li>
       )),
     []
