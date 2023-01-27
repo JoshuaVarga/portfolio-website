@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import DarkMode from "../DarkMode";
 import Link from "../Link";
+import Button from "../Button";
 
 import { links, logo, darkMode } from "../../data";
 
@@ -29,7 +30,7 @@ function Topbar(props) {
 
   return (
     <div className="topbar">
-      <button
+      <Button
         className="topbar__logo"
         type="button"
         onClick={() => handleLogoClick(-1)}
@@ -39,7 +40,7 @@ function Topbar(props) {
           icon={logo.icon}
           alt={logo.alt}
         />
-      </button>
+      </Button>
       <div className="topbar__items">
         <ul className="topbar__links">{topbarLinks}</ul>
         <DarkMode

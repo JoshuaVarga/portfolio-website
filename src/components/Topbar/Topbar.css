@@ -3,22 +3,19 @@
   justify-content: space-between;
 }
 
-.topbar__link {
+.topbar__link,
+.topbar__logo {
   font-size: 32px;
   padding-left: 4px;
   padding-right: 4px;
 }
 
-.topbar__link:hover,
-.topbar__logo:hover {
-  scale: 1.2;
-}
-
-.topbar__logo {
-  font-size: 32px;
-}
-
 .topbar__items {
   display: flex;
   align-items: center;
+}
+
+.topbar__links {
+  border-right: 2px solid var(--font-color);
+  padding: 4px;
 }
