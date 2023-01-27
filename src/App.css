@@ -62,12 +62,6 @@ button {
   border: none;
 }
 
-a:hover,
-button:hover {
-  cursor: pointer;
-  color: var(--highlight-color);
-}
-
 ul {
   display: flex;
   list-style: none;
@@ -98,7 +92,6 @@ footer {
   align-items: center;
 }
 
-
 @media screen and (max-width: 600px) {
   main {
     flex-direction: column;
@@ -111,5 +104,13 @@ footer {
   .sidebar__wrapper {
     align-items: flex-end;
     justify-content: right;
+  }
+}
+
+@media (hover) {
+  a:hover,
+  button:hover {
+    cursor: pointer;
+    color: var(--highlight-color);
   }
 }
