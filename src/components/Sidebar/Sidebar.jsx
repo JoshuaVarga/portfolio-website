@@ -1,6 +1,7 @@
 import React, { useMemo, useCallback } from "react";
 import { motion } from "framer-motion";
 import PropTypes from "prop-types";
+import Button from "../Button";
 
 import "./Sidebar.css";
 
@@ -22,17 +23,16 @@ function Sidebar(props) {
           whileInView={{ opacity: 1, scale: 1 }}
           key={projectHeader}
         >
-          <motion.button
+          <Button
             className={
               index === currentIndex
                 ? "sidebar__item--selected"
                 : "sidebar__item"
             }
-            type="button"
             onClick={() => handleClick(index)}
           >
             {projectHeader}
-          </motion.button>
+          </Button>
         </motion.li>
       )),
     [projectHeaders, currentIndex, handleClick]

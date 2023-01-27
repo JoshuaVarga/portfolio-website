@@ -13,24 +13,12 @@
 }
 
 .sidebar__item,
-.sidebar__item:hover,
-.sidebar__item--selected,
-.sidebar__item--selected:hover {
+.sidebar__item--selected {
   font-size: 1.2em;
-}
-
-.sidebar__item:hover {
-  font-weight: bold;
 }
 
 .sidebar__item--selected {
   color: var(--highlight-color);
-  font-weight: bold;
-}
-
-.sidebar__item--selected:hover {
-  color: var(--font-color);
-  font-weight: normal;
 }
 
 @media screen and (max-width: 600px) {
@@ -38,6 +26,15 @@
     height: 4rem;
     overflow: scroll;
     overflow-x: hidden;
-    scrollbar-width: none;
+    scrollbar-width: thin;
+  }
+
+  .sidebar__item--selected:hover {
+    font-size: 1.2em;
+  }
+
+  .sidebar__item:hover,
+  .sidebar__item--selected:hover {
+    color: var(--highlight-color);
   }
 }
